@@ -19,7 +19,7 @@ This project is a web application that mimics the Netflix user interface. It inc
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/netflix-clone-webapp.git`
+1. Clone the repository: `git clone https://github.com/Nikul-Parmar-19/Netflix-Clone---WebApp.git`
 2. Open `index.html` in your web browser.
 
 ## Contributing
