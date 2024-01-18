@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    height: 70vh;
+    position: relative;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    /*It refers to whichever is minimum will applied.*/
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.60;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 75vw;
+    margin: auto;
+
+    height: 62px;
+    /* margin-top: 40px; */
+
+}
+
+nav img {
+    width: 160px;
+    margin-top: 40px;
+
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+
+    margin-top: 30px;
+
+
+}
+
+.hero {
+    height: calc(100% - 62px);
+    /*100% height of hero minus 62px height of navbar.*/
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: relative;
+
+    color: white;
+
+    font-family: 'Martel Sans', sans-serif;
+
+    gap: 23px;
+
+    padding: 0px 30px;
+
+}
+
+.hero> :nth-child(1) {
+    /* font-weight: 900; */
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(64, 64, 64);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+
+    background-color: rgba(23, 23, 23, 0.3);
+    color: white;
+    border-radius: 5px;
+
+    border: 2px solid rgba(250, 250, 250, 0.3);
+
+    /* cursor: pointer; */
+
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+
+    padding: 8px 24px;
+    font-size: 24px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #ff000000;
+    cursor: pointer;
+}
+
+
+.main input {
+    padding: 15px 125px 15px 10px;
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.3);
+    border-radius: 5px;
+
+    border: 2px solid rgba(250, 250, 250, 0.3);
+
+
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+
+    width: 70px;
+
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.btn-eng {
+    width: 120px;
+}
+
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+
+    position: relative;
+    z-index: 10;
+
+}
+
+.secImg>.video-01 {
+    position: absolute;
+    top: 89px;
+    right: 0px;
+    width: 462px;
+    overflow: hidden;
+    left: 13%;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.video-x {
+    max-width: 63%;
+
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 462px;
+    overflow: hidden;
+    left: 18%;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+    /* column-gap: 20px; */
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+
+
+
+    /* padding: 50px; */
+}
+
+.faqbox {
+    display: flex;
+    background-color: rgb(45, 45, 45);
+
+
+    font-size: 30px;
+    font-weight: 300;
+
+    padding: 30px;
+    max-width: 65vw;
+    margin: 20px auto;
+    justify-content: space-between;
+    cursor: pointer;
+
+    transition: all 0.4s ease-out;
+
+}
+
+.faqbox-x :hover {
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+    background-color: rgb(97, 97, 97);
+}
+
+footer {
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    padding: 14px;
+    margin-bottom: 70px;
+}
+
+.footer-x {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.footer-item>a {
+    color: white;
+    padding: 10px;
+}
+
+.quetions {
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    font-size: 15px;
+    padding: 50px 0 0 0;
+}
+
+.quetions>a {
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* Designing a responsiveness : */
+@media screen and (max-width : 1300px) {
+
+    nav {
+        max-width: 90vw;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 34px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 16px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .main input {
+        padding: 17px 42px 5px 10px;
+        font-size: 18px;
+
+    }
+
+    .btn-red {
+        padding: 4px 12px;
+        font-size: 20px;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 335px;
+    }
+
+    .secImg>.video-01 {
+        top: 75px;
+        width: 289px;
+    }
+
+    .first>div :nth-child(1) {
+        font-size: 34px;
+    }
+
+    .first>div :nth-child(2) {
+        font-size: 16px;
+    }
+
+
+    .footer-x {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+    }
+
+    .faqbox {
+        font-size: 24px;
+    }
+
+
+}
